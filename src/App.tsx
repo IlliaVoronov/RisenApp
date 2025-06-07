@@ -6,7 +6,7 @@ import { PostPage } from "./pages/PostPage";
 import { CreateCommunityPage } from "./pages/CreateCommunityPage";
 import { CommunitiesPage } from "./pages/CommunitiesPage";
 import { CommunityPage } from "./pages/CommunityPage";
-
+import { Analytics } from "@vercel/analytics/nuxt";
 
 
 
@@ -15,6 +15,7 @@ import { CommunityPage } from "./pages/CommunityPage";
 function App() {
   return (
     <div className="min-h-screen bg-black text-gray-100 transition-opacity duration-700 pt-20">
+      <Analytics /> //importing analytics to enable vrcel analytics
       <Navbar />
       <div className="container mx-auto px-4 py-6">
         <Routes>
