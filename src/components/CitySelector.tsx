@@ -35,6 +35,7 @@ export const CitySelector = ({
     queryKey: ["cities"],
     queryFn: fetchCities,
   });
+    
 
   if (isLoading) {
     return (
